@@ -1,28 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-    /* CSS to make images responsive */
-	.image-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
+	<meta charset="UTF-8">
+	<title> Rosary's photos </title>
 
-    .image-container img {
-      max-width: 40%;
-      height: auto;
-    }
+  	<style>
+	    /* ------- image container ------*/
+		.image-container {
+	      display: flex;
+	      justify-content: center;
+	      align-items: center;
+	      flex-direction: column;
+	    }
 
-  </style>
+	    .image-container img {
+	      max-width: 40%;
+	      height: auto;
+	      margin-top: 1.5%;
+	      margin-bottom: 1.5%;
+	    }
+
+	    /* ------- paragraph title -----*/
+	    .p-title {
+			color:#333;
+			max-width: 40%;
+			margin:auto;
+			text-align:left;
+			font-size: 16px;
+	    }
+
+	    /* ------- navigation bar ------*/
+	    .navbar {
+	      background-color: #333;
+	      color: #fff;
+	      width: 200px;
+	      height: 100vh; /* Adjust the height as needed */
+	      position: fixed;
+	      left: 0;
+	      top: 0;
+	      padding: 20px;
+	    }
+
+	    .navbar ul {
+	      list-style-type: none;
+	      padding: 0;
+	      margin: 0;
+	    }
+
+	    .navbar li {
+	      margin-bottom: 10px;
+	    }
+
+	    .navbar li a {
+	      display: block;
+	      color: #fff;
+	      text-decoration: none;
+	    }
+
+	    .navbar li a:hover {
+	      background-color: #555;
+	    }
+
+	    /* Adjust content positioning to accommodate the navigation bar */
+	    .content {
+	      margin-left: 220px; /* Adjust the margin value based on the navbar width */
+	      padding: 20px;
+	    }
+
+  	</style>
+  	
 </head>
 
 <body>
+	  <div class="navbar">
+	    <ul>
+	      <li><a href="#">2023</a></li>
+	      <li><a href="#">2022</a></li>
+	    </ul>
+	  </div>
+
+	<div class = "p-title">
+		<p>Cats in Säumerstrasse</p>
+		<p>&#x1F4C5; 2023-06-07 Wednesday</p>
+	</div>
+
 	<div class = "image-container">
 	  	<img src="photos/2023/Jun/Cats/cat1.JPG" alt="cat 1">
 		<img src="photos/2023/Jun/Cats/cat2.JPG" alt="cat 2">
 		<img src="photos/2023/Jun/Cats/cat3.JPG" alt="cat 3">
+	</div>
 </body>
 
 </html>
