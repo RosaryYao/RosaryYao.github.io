@@ -3,17 +3,26 @@
 <head>
   <style>
     /* CSS to make images responsive */
-    img {
-      max-width: 80%;
+	.image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .image-container img {
+      max-width: 40%;
       height: auto;
     }
+
   </style>
 </head>
 
 <body>
-  	<img src="photos/2023/Jun/Cats/cat1.JPG" alt="cat 1">
-	<img src="photos/2023/Jun/Cats/cat2.JPG" alt="cat 2">
-	<img src="photos/2023/Jun/Cats/cat3.JPG" alt="cat 3">
+	<div class = "image-container">
+	  	<img src="photos/2023/Jun/Cats/cat1.JPG" alt="cat 1">
+		<img src="photos/2023/Jun/Cats/cat2.JPG" alt="cat 2">
+		<img src="photos/2023/Jun/Cats/cat3.JPG" alt="cat 3">
 </body>
 
 </html>
